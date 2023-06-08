@@ -1,8 +1,10 @@
-import { Chart } from 'chart.js/auto';
+import { Chart, defaults } from 'chart.js/auto';
 import 'chartjs-plugin-roughness';
 import visualize, { data } from 'ossl:collection';
 import { useEffect, useRef } from 'react';
 import * as colors from 'tailwindcss/colors.js';
+
+defaults.font.family = 'CabinSketch'
 
 const res = visualize(data, { colors });
 
