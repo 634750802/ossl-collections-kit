@@ -1,8 +1,11 @@
-import { Chart, defaults } from 'chart.js/auto';
 import 'chartjs-plugin-roughness';
-import visualize, { data } from 'ossl:collection';
-import { useEffect, useRef } from 'react';
+import "chartjs-adapter-luxon";
+
 import * as colors from 'tailwindcss/colors.js';
+
+import { Chart, defaults } from 'chart.js/auto';
+import { useEffect, useRef } from 'react';
+import visualize, { data } from 'ossl:collection';
 
 defaults.font.family = 'CabinSketch'
 
